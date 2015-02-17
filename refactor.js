@@ -326,3 +326,54 @@ var accelerate = function(amount) {
 
   speed += amount;
 };
+
+//It's returning Not A Number because the parameter is undefined.
+//Whenever you attempt to perform a calculation on anything that is not a number
+//such as a string or an undefined variable, you get NaN.
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//            ___  ____  _  ____  ______        //
+//           / _ )/ __ \/ |/ / / / / __/        //
+//          / _  / /_/ /    / /_/ /\ \          //
+//         /____/\____/_/|_/\____/___/          //
+//                                              //
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// The function below allows you to call another
+// function at a later time. It takes 2 params, an
+// amount of miliseconds and a function. It will
+// call the function that many miliseconds later.
+// Refactor it so that is has a default timeout.
+
+// This is more advanced than the default param on
+// the accelerate function. This is because there
+// is another parameter to consider.
+
+// When setting the timeout, the function needs to
+// work like this:
+
+//     callLater(1000, function(){
+//       ...
+//     });
+
+// When using the default timeout, the function
+// needs to work like this:
+
+//     callLater(function(){
+//       ...
+//     });
+
+var callLater = function(timeout, callback) {
+  setTimeout(callback, timeout);
+};
+
+// Put your answer below -------------------------
+
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
