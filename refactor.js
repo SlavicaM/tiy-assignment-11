@@ -35,3 +35,26 @@ var convertToAnonymous = function() {
 
 // call function
 convertToAnonymous();
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 2. --------------------------------------------
+
+// Here we are using setTimeout to call a function
+// after 2 seconds. Refactor to use an anonymous
+// function
+
+function sayHi() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+
+// Put your answer below -------------------------
+
+setTimeout(function() {
+  alert("Hello, World!")
+},2000);
