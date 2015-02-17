@@ -177,3 +177,23 @@ return mySpanishWord[word];
 };
 // call function
 spanishWord('rojo');
+
+
+// var spanishWord = new Word("rojo", "blanco", "azul", "verde", "negro");
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 6. --------------------------------------------
+
+// Below is a variable *declaration* and an
+// *assignment* in a single line of code.
+// Break it up so that the declaration and
+// assignment are happening on 2 seperate lines.
+
+var foo = "bar";
+
+// Put your answer below -------------------------
+var foo;
+foo = "bar";
