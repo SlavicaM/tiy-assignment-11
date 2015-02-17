@@ -266,3 +266,29 @@ var decreaseScore = function() {
 
 })
 ();
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 9. --------------------------------------------
+
+// The below function does not work. The variable
+// twoPlusTwo gets set to `undefined`. Refactor
+// the function to make it work.
+
+var addNumbers = function(numberA, numberB) {
+  console.log(numberA + numberB);
+};
+
+var twoPlusTwo = addNumbers(2,2);
+
+// Put your answer below -------------------------
+
+var addNumbers = function(numberA, numberB) {
+  var twoPlusTwo = numberA + numberB
+  console.log(twoPlusTwo);
+};
+
+//var twoPlusTwo = addNumbers(2,2);
