@@ -96,3 +96,30 @@ The same func has a second parameter, which will cause the delay in execution.
 The letter is z
 The letter is y
 */
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 4. --------------------------------------------
+
+// The function below reverses a string. The body
+// of the function is 5 lines of code. Refactor
+// this function to do the same thing with 1 line
+
+var reverseStr = function(str) {
+  var arr;
+  arr = str.split("");
+  arr = arr.reverse();
+  str = arr.join("");
+  return str;
+};
+
+// Put your answer below -------------------------
+
+function reverseStr(str){
+    return str.split("").reverse().join("");
+}
+// call function :: return: 
+reverseStr("reverse string");
