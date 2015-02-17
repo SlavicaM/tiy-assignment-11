@@ -123,3 +123,57 @@ function reverseStr(str){
 }
 // call function :: return: 
 reverseStr("reverse string");
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 5. --------------------------------------------
+
+// The function below takes the spanish word for
+// the colors red, white, blue, green, and black
+// and returns the hex code for that color.
+// Refactor this function to use an object
+// instead of an if/else statement.
+
+
+var spanishColor = function(colorName) {
+  if (colorName.toLowerCase() === "rojo") {
+    return "#ff0000";
+  }
+  else if (colorName.toLowerCase() === "blanco") {
+    return "#ffffff";
+  }
+  else if (colorName.toLowerCase() === "azul") {
+    return "#0000ff";
+  }
+  else if (colorName.toLowerCase() === "verde") {
+    return "#00ff00";
+  }
+  else if (colorName.toLowerCase() === "negro") {
+    return "#000000";
+  }
+};
+
+// Put your answer below -------------------------
+
+// var mySpanishWord = {
+//   "spanish-word": "rojo",
+//   "color": "#ff0000" 
+//   }
+
+function  spanishWord (word) {
+
+  var mySpanishWord = {};
+  mySpanishWord.rojo = "#ff0000";
+  mySpanishWord.blanco = "#ffffff";
+  mySpanishWord.azul = "#0000ff";
+  mySpanishWord.verde = "#00ff00";
+  mySpanishWord.negre = "#000000";
+
+return mySpanishWord[word];
+ 
+};
+// call function
+spanishWord('rojo');
