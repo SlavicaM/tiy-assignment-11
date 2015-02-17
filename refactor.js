@@ -58,3 +58,41 @@ setTimeout(sayHi, 2000);
 setTimeout(function() {
   alert("Hello, World!")
 },2000);
+
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 3. --------------------------------------------
+
+// The code below will log the letter twice. What
+// is the order that will be logged?
+
+// [a]: x then y then z
+// [b]: y then z
+// [c]: z then y
+// [d]: x then z
+
+// Please explain your answer.
+
+var letter = "x";
+
+setTimeout(function(){
+  letter = "y";
+  console.log("The letter is", letter);
+}, 1);
+
+letter = "z";
+console.log("The letter is", letter);
+
+// Put your answer below -------------------------
+/* The first value of the var letter which is “x” will never reach the function setTimeout
+nor the last statement.
+The function setTimeout will read its local var letter and use it. T
+he setTimeout func would read outside the var leeter = “x” if the local var has never existed.
+The same func has a second parameter, which will cause the delay in execution.
+The letter is z
+The letter is y
+*/
