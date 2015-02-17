@@ -197,3 +197,29 @@ var foo = "bar";
 // Put your answer below -------------------------
 var foo;
 foo = "bar";
+
+// -----------------------------------------------
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// 7. --------------------------------------------
+
+// The function `callTenTimes` takes an argument
+// that is another function and will call that
+// function 10 times. Refactor this into another
+// function called `callNtimes` that allows you
+// to specify a number of times to call the given
+// function.
+
+var callTenTimes = function(callback) {
+  var range = _.range(10);
+  _.each(range, callback);
+};
+
+// Put your answer below -------------------------
+
+function callNtimes = function(callback, num) {
+  var range = _.range(num);
+  _.each(range, callback);
+};
